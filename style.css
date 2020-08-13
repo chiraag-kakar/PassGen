@@ -16,6 +16,10 @@ body {
 	min-height: 100vh;
 }
 
+body.dark-theme {
+	background-color: #333;
+}
+
 p {
 	margin: 5px 0;
 }
@@ -95,6 +99,51 @@ input[type=checkbox] {
 	.result-container {
 		font-size: 14px;
 	}
+}
+
+/*TOGGLE*/
+body.dark-theme h2, body.dark-theme p {
+	color: #ddd;
+}
+
+.toggle input[type=checkbox] {
+	display: none;
+}
+
+.toggle label {
+	background-color: #777;
+	border: 2px solid #555;
+	border-radius: 50px;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: all ease-in-out 0.3s;
+	width: 100px;
+	height: 50px;
+}
+
+.toggle label::after {
+	background-color: #555;
+	border-radius: 50%;
+	content: ' ';
+	cursor: pointer;
+	display: inline-block;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	transition: all ease-in-out 0.3s;
+	width: 42px;
+	height: 42px;
+}
+
+.toggle input[type=checkbox]:checked ~ label {
+	background-color: #00a0fc;
+	border-color: #006dc9;
+}
+
+.toggle input[type=checkbox]:checked ~ label::after {
+	background-color: #0054B0;
+	transform: translateX(50px);
 }
 
 /* SOCIAL PANEL CSS */
