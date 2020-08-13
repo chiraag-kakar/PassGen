@@ -111,7 +111,7 @@ body.dark-theme h2, body.dark-theme p {
 }
 
 .toggle label {
-	background-color: #777;
+	background-color: #fffff;
 	border: 2px solid #555;
 	border-radius: 50px;
 	cursor: pointer;
@@ -123,7 +123,7 @@ body.dark-theme h2, body.dark-theme p {
 }
 
 .toggle label::after {
-	background-color: #555;
+	background-color: #0d4bd0;
 	border-radius: 50%;
 	content: ' ';
 	cursor: pointer;
