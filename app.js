@@ -123,7 +123,7 @@ const countEl = document.getElementById('count');
 updateVisitCount();
 
 function updateVisitCount() {
-	fetch('https://api.countapi.xyz/hit/chiraag-kakar.github.io/passgen/')
+	fetch('https://api.countapi.xyz/update/chiraag-kakar/github/?amount=1')
 	.then(res => res.json())
 	.then(res => {
 		countEl.innerHTML = res.value;
