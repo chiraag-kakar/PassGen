@@ -142,7 +142,7 @@ body.dark-theme h2, body.dark-theme p {
 }
 
 .toggle input[type=checkbox]:checked ~ label::after {
-	background-color: #ffffff;
+	background-color: #000000;
 	transform: translateX(50px);
 }
 
